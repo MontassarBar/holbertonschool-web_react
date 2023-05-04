@@ -14,7 +14,7 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   plugins: [new HtmlWebpackPlugin(), new CleanWebpackPlugin()],
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
