@@ -13,7 +13,7 @@ module.exports = {
     filename: '[name].bundle.js',
   },
   devtool: 'inline-source-map',
-  plugins: [new HtmlWebpackPlugin({title: "Document"}), new CleanWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin(), new CleanWebpackPlugin()],
   mode: 'development',
   module: {
     rules: [
