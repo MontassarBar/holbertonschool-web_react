@@ -14,10 +14,6 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   mode: 'development',
-  plugins: [
-    new HtmlWebpackPlugin(),
-    new CleanWebpackPlugin(),
-  ],
   module: {
     rules: [
       {
@@ -40,4 +36,5 @@ module.exports = {
   optimization: {
     runtimeChunk: 'single',
   },
+  plugins: [new HtmlWebpackPlugin(), new CleanWebpackPlugin()],
 };
