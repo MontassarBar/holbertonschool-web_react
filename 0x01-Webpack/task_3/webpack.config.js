@@ -26,6 +26,7 @@ module.exports = {
       },
     ],
   },
+  plugins: [new HtmlWebpackPlugin(), new CleanWebpackPlugin()],
   devServer: {
     static: {
       directory: path.join(__dirname, 'public'),
