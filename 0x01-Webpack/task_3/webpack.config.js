@@ -9,8 +9,8 @@ module.exports = {
     footer: './modules/footer/footer.js'
   },
   output: {
-    path: path.resolve(__dirname, 'public'),
     filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'public'),
   },
   devtool: 'inline-source-map',
   mode: 'development',
