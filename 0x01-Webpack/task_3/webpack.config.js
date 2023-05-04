@@ -12,6 +12,7 @@ module.exports = {
     path: path.resolve(__dirname, 'public'),
     filename: '[name].bundle.js',
   },
+  devtool: 'inline-source-map',
   plugins: [new HtmlWebpackPlugin(), new CleanWebpackPlugin()],
   mode: 'development',
   module: {
