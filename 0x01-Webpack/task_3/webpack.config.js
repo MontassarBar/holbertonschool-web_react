@@ -12,7 +12,7 @@ module.exports = {
     path: path.resolve(__dirname, 'public'),
     filename: '[name].bundle.js',
   },
-  devtool: 'inline-source-map',
+
   mode: 'development',
   module: {
     rules: [
