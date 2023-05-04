@@ -1,6 +1,6 @@
 import $ from "jquery";
 import _ from 'lodash';
-import 'body.css'
+import './body.css'
 
 $('<button>Click here to get started</button>').appendTo('body');
 $("<p id='count'></p>").appendTo('body');
