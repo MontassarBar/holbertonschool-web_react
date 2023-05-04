@@ -1,6 +1,5 @@
 import $ from "jquery";
 import _ from 'lodash';
-import '../css/main.css';
 
 $('<div id="logo"></div>').appendTo('body');
 $('<p>Holberton Dashboard</p>').appendTo('body');
