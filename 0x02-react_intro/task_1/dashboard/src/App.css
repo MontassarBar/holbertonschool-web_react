@@ -1,0 +1,31 @@
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App-header img {
+  width: 150px;
+	height: 150px;
+}
+
+.App-header {
+  color: rgb(215, 5, 5);
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  background-color: rgb(215, 5, 5);
+  height: 3px;
+  border:  none;
+}
+
+.App-body {
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-bottom: 300px;
+}
+
+.App-footer {
+  text-align: center;
+  font-style: italic;
+}
