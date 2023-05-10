@@ -1,4 +1,4 @@
-const { getFullYear, getFooterCopy, getLatestNotification } = require('../src/utils');
+const { getFullYear, getFooterCopy, getLatestNotification } = require('./utils');
 
 test("return the current year", () => {
     const currentYear = new Date().getFullYear();
