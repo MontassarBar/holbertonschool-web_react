@@ -1,0 +1,27 @@
+.Notifications {
+    display: flex;
+    border-style: dashed;
+    border-color: red;
+    padding: 10px 30px 50px 50px;
+}
+
+[data-priority= 'default'] {
+    color: rgb(1, 1, 80);
+}
+
+[data-priority= 'urgent'] {
+    color: red;
+}
+
+li {
+    position: relative;
+    bottom: -40px;
+    right: 250px;
+    font-weight: bold;
+}
+
+p {
+    position: relative;
+    right: 45px;
+    font-weight: bold;
+}

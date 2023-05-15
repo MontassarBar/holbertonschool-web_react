@@ -1,0 +1,17 @@
+.App-body {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 300px;
+  }
+  
+  
+  label {
+    font-weight: bold;
+  }
+
+  hr {
+    background-color: rgb(215, 5, 5);
+    height: 3px;
+    border:  none;
+  }
+  
