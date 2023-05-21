@@ -1,0 +1,33 @@
+.Notifications {
+    border-style: dashed;
+    border-color: red;
+    padding: 10px 30px 10px 50px;
+}
+
+[data-notification-type= 'default'] {
+    color: rgb(1, 1, 80);
+}
+
+[data-notification-type= 'urgent'] {
+    color: red;
+}
+
+li {
+    font-weight: bold;
+}
+
+p {
+    font-weight: bold;
+}
+
+.menuItem {
+    width: fit-content;
+    margin-left: auto;
+}
+
+.container {
+    width: fit-content;
+    height: 100px;
+    position: absolute;
+    right: 10px;
+}
