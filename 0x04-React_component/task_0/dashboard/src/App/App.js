@@ -23,18 +23,16 @@ const listNotifications = [
 class App extends React.Component {
   constructor(props){
     super(props)
-    this.state = {
-      isLoggedIn: props.isLoggedIn
-    }
   }
   render() {
+  const { isLoggedIn } = this.props;
   return (
     <React.Fragment>
     <Notifications listNotifications={listNotifications} />
     <div className='App'>
       <Header />
       <hr></hr>
-      {this.state.isLoggedIn ? <CourseList listCourses={listCourses} /> : <Login />}
+      {isLoggedIn ? <CourseList listCourses={listCourses} /> : <Login />}
       <hr></hr>
       <Footer />
     </div>
