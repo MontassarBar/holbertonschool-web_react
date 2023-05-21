@@ -7,6 +7,19 @@ import Login from "../Login/Login";
 import Footer from "../Footer/Footer";
 import Notifications from "../Notifications/Notifications"
 import CourseList from '../CourseList/CourseList';
+import { getLatestNotification } from '../utils/utils';
+
+const listCourses = [
+    {id: 1, name: "ES6", credit: 60},
+    {id: 2, name: "Webpack", credit: 20},
+    {id: 3, name: "React", credit: 40}
+  ]
+  
+  const listNotifications = [
+    {id: 1, type: "default", value: "New course available"},
+    {id: 2, type: "urgent", value: "New resume available"},
+    {id: 3, type: "urgent", __html: {__html: getLatestNotification()}},
+  ]
 
 describe('<App />', () => {
     it('renders without crashing', () => {
@@ -15,7 +28,7 @@ describe('<App />', () => {
 
     it('verify that App renders Notifications component', () => {
         const wrapper = shallow(<App />);
-        expect(wrapper.contains(<Notifications />)).to.equal(true);
+        expect(wrapper.contains(<Notifications listNotifications={listNotifications} />)).to.equal(true);
     });
 
     it('verify that App renders Header component', () => {
@@ -41,12 +54,12 @@ describe('<App />', () => {
 
 describe('<App isLoggedIn={true}/>', () => {
     it("verify that the Login component is not included", () => {
-        const wrapper = shallow(<App isLoggedIn={true}/>);
+        const wrapper = shallow(<App isLoggedIn={true} />);
         expect(wrapper.contains(<Login />)).to.equal(false);
     });
 
     it("verify that the CourseList component is included", () => {
         const wrapper = shallow(<App isLoggedIn={true}/>);
-        expect(wrapper.contains(<CourseList />)).to.equal(true);
+        expect(wrapper.contains(<CourseList listCourses={listCourses} />)).to.equal(true);
     });
 });
