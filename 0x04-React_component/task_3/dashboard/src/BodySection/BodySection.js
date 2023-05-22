@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 function BodySection(props) {
     const title = props.title;
@@ -9,6 +11,11 @@ function BodySection(props) {
             {children}
         </div>
     )
+}
+
+BodySection.prototypes = {
+    title: PropTypes.string,
+    children: PropTypes.node
 }
 
 export default BodySection;
