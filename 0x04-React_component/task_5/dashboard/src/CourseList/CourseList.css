@@ -1,0 +1,16 @@
+[id = 'CourseList'] {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 300px;
+  }
+
+ th, tr, td {
+    border: 1px solid;
+  }
+
+table {
+    position: relative;
+    left: 10px;
+    width: 1200px;
+    
+}
