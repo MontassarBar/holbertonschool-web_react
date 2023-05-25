@@ -77,7 +77,7 @@ App.prototypes = {
 }
 
 App.defaultProps = {
-  isLoggedIn: true,
+  isLoggedIn: false,
   logOut: function() {}
 }
 
