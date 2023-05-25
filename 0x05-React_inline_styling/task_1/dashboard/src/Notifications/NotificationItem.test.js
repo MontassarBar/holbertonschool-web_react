@@ -2,6 +2,7 @@ import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import NotificationItem from './NotificationItem';
+import {StyleSheetTestUtils} from "aphrodite"
 
 StyleSheetTestUtils.suppressStyleInjection();
 

@@ -8,6 +8,9 @@ import Footer from "../Footer/Footer";
 import Notifications from "../Notifications/Notifications"
 import CourseList from '../CourseList/CourseList';
 import { getLatestNotification } from '../utils/utils';
+import {StyleSheetTestUtils} from "aphrodite"
+
+StyleSheetTestUtils.suppressStyleInjection();
 
 const listCourses = [
     {id: 1, name: "ES6", credit: 60},
