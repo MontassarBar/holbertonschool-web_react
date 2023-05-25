@@ -6,7 +6,7 @@ function Login() {
 
     <div className={css(styles.body)}>
       <p>Login to access the full dashboard</p>
-      <label htmlFor='Email' style={{fontWeight: 'bold'}}>Email:  </label>
+      <label htmlFor='Email'>Email:  </label>
       <input type="text" id="email" name="email" ></input>
       <label htmlFor='password' style={{ marginLeft: '.5rem' }}>Password:  </label>
       <input type="text" id="password" name="password" style={{ marginLeft: '.5rem' }}></input>
