@@ -1,6 +1,7 @@
-import { fromJS, getIn } from 'immutable';
+import { fromJS } from 'immutable';
 
 export default function accessImmutableObject(object, array) {
-  const map1 = fromJS(object);
-  return getIn(map1, array, undefined);
+    if (!object || !array || !array.length) return undefined;
+    const nested = fromJS(object);
+    return nested.getIn(array);
 }
